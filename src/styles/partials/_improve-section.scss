@@ -1,0 +1,49 @@
+.section.improve-skills {
+  .col.img {
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  .col.typography {
+    padding-left: 1em;
+
+    .skill-item {
+      border-left: 0.2em solid var(--primary-color);
+      margin-bottom: .5em;
+      padding: .1em 0 .1em .5em;
+      color: var(--text-light);
+      font-weight: bold;
+      transform: translateX(100%);
+      opacity: 0;
+      animation: getAnimationDuration(.3s) slideInRight forwards;
+      
+      @for $i from 2 through 7 {
+        &:nth-child(#{$i}) {
+          animation-delay: #{$i * .1}s;
+        }
+      }
+    }
+
+    .btn {
+      max-width: 240px;
+      margin-top: .75em;
+
+      img {
+        width: 20%;
+        margin: 0 0.5rem;
+      }
+
+      &:hover {
+        opacity: 1.5;
+      }
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+}
