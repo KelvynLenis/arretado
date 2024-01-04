@@ -12,7 +12,7 @@ A recipe app focused on traditional food from Brazil Northeast region.
 
 Clone the repository locally.
 
-``git clone``
+``git clone https://github.com/KelvynLenis/arretado.git``
 
 Install the dependencies.
 
